@@ -1,5 +1,7 @@
 # Software Maintenance and Testing - Deployment Project
 
+[![Coverage Status](https://coveralls.io/repos/github/ElinaTuulikki/Ohjelmistojen-yll-pito-ja-testaus---Deployment/badge.svg?branch=master)](https://coveralls.io/github/ElinaTuulikki/Ohjelmistojen-yll-pito-ja-testaus---Deployment?branch=master)
+
 Final deployment task for the Software Maintenance and Testing course. This project demonstrates automated testing and deployment practices using GitHub Actions.
 
 ## Table of Contents
