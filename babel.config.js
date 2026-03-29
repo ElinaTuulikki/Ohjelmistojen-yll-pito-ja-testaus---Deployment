@@ -1,13 +1,12 @@
-export default {
+module.exports = {
   presets: [
     [
       '@babel/preset-env',
       {
         targets: {
-          node: 'current'
+          node: 'current',
         },
-        modules: 'auto'  // This will convert ES modules to CommonJS when needed
-      }
-    ]
-  ]
+      },
+    ],
+  ],
 };

@@ -1,16 +1,15 @@
 {
   "name": "at00by10-tests",
   "version": "1.0.0",
-  "description": "",
+  "description": "Unit tests for software-testing-assignment library",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch",
-    "coverage:report": "jest --coverage --coverage --watch"
+    "test:watch": "jest --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["testing", "jest", "coverage"],
+  "author": "ElinaTuulikki",
   "license": "ISC",
   "dependencies": {
     "software-testing-assignment": "github:petri-rantanen/AT00BY10"

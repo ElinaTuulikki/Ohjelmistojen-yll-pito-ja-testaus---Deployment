@@ -1,0 +1,49 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run tests with coverage
+      run: npm run test:coverage
+      
+    - name: Display coverage summary
+      run: |
+        echo "📊 Coverage Report"
+        echo "=================="
+        if [ -f coverage/lcov.info ]; then
+          echo "✅ Coverage file generated"
+          echo ""
+          # Display text summary
+          npx jest --coverage --coverageReporters=text-summary || true
+        else
+          echo "❌ No coverage file found"
+          exit 1
+        fi
+
+    - name: Upload to Coveralls
+      uses: coverallsapp/github-action@v2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        coveralls-token: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        path-to-lcov: ./coverage/lcov.info
+        format: lcov
