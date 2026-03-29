@@ -39,6 +39,8 @@ The project demonstrates:
 ├── jest.config.js # Jest testing configuration
 ├── package.json # Dependencies and scripts
 └── package-lock.json # Locked dependencies
+└── test_results.txt
+└── test_summary.txt
 
 
 ##  Technologies Used
