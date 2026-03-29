@@ -7,8 +7,8 @@ Final deployment task for the Software Maintenance and Testing course. This proj
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Project Structure](#project-structure)
-  - [🛠️ Technologies Used](#️-technologies-used)
-  - [🚀 Getting Started](#-getting-started)
+  - [Technologies Used](#technologies-used)
+  - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [CI/CD Pipeline](#cicd-pipeline)
@@ -39,7 +39,7 @@ The project demonstrates:
 └── package-lock.json # Locked dependencies
 
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **JavaScript** - Primary programming language
 - **Jest** - Testing framework
@@ -47,7 +47,7 @@ The project demonstrates:
 - **GitHub Actions** - CI/CD automation
 - **npm** - Package management
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
